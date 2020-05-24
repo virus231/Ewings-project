@@ -1,0 +1,53 @@
+
+.footer {
+    background-color: #531341;
+
+    
+
+    .tel {
+        a {
+            text-decoration: none;
+            color: white;
+            transition: all .33s;
+
+            &:hover {
+                color: rgb(195, 122, 255);
+
+            }
+        }
+        
+    }
+    
+    .post {
+        a {
+            text-decoration: none;
+            color: white;
+            transition: all .33s;
+
+            &:hover {
+                color: rgb(195, 122, 255);
+
+            }
+        }
+    }
+
+    nav {
+        a {
+            text-decoration: none;
+            color: white;
+            transition: all .33s;
+            &:hover {
+                color: rgb(195, 122, 255);
+            }
+        }
+    }
+
+    .social-links {
+        a {
+            transition: all .33s;
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
