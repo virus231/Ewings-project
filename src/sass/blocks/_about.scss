@@ -3,6 +3,28 @@
     padding-top: 160px;
     background: url('../images/krula.png');
     background-repeat: no-repeat;
+    background-position-x: right;
+
+    &-item {
+        background-color: #fff;
+        border-radius: 10px;
+        
+        &__title {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            color: #525252;
+        }
+
+        &__desc {
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 17px;
+            color: #595959;
+        }
+    }
 }
 
 .block-about {
@@ -39,7 +61,3 @@
     }
 }
 
-.about-pic {
-    
-
-}
