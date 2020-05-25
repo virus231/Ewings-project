@@ -20,4 +20,13 @@
             }
         }
     }
+
+    .social-links {
+        a {
+            transition: all .33s;
+            &:hover {
+                transform: rotate(360deg)
+            }
+        }
+    }
 }

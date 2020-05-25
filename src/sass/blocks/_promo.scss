@@ -7,17 +7,10 @@
     // padding-top: 50px;
 
     &-wrapper {
-        position: relative;
-        width: 200px;
-    
     }
 
-
     &-block {
-        position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+        margin-top: 150px;
     }
 
     &-subheading {
@@ -41,4 +34,39 @@
             font-size: 60px;
         }
     }
+
+    &-how {
+        .how {
+
+            &__go {
+                background: linear-gradient(75.39deg, #52C600 13.64%, #97FF13 100%);
+                padding: 12px 30px 12px 35px;
+                border-radius: 38px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+
+                &:hover {
+                    
+                }
+            }
+
+            &__work {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                border-bottom: 2px solid $green;
+                transition: all .33s;
+
+                &:hover {
+                    color: black;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+
 }
