@@ -5,18 +5,27 @@
 
 
 body {
-    font-size: 16px;
-    background: #111111;
-    color: #E6E6E6;
-    font-family: 'Comfortaa', 'Dancing Script', 'Megante', cursive;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #E5E5E5;
+    font-family: 'Rubik', 'Montserrat',sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+        text-decoration: none;
+    }
+}
 
 ::selection {
-    color: $pink-dark;
+    color:#52C600;
 }
 
 @import 'blocks/header';
+@import 'blocks/promo';
+
 
 
 
