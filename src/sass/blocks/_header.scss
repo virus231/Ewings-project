@@ -2,9 +2,7 @@
 
     .logo {
 
-        &-link {
-
-        }
+        &-link {}
 
         &-img {
             max-width: 100%;
@@ -15,8 +13,44 @@
 
         &__link {
             transition: all .33s;
+
+            &:after {
+                content: "";
+                display: block;
+                height: 3px;
+                border-radius: 10px;
+                -webkit-transform: scaleX(0);
+                -ms-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: .4s -webkit-transform;
+                -o-transition: .4s -webkit-transform;
+                transition: .4s -webkit-transform;
+                -webkit-transition: .4s transform;
+                -o-transition: .4s transform;
+                transition: .4s transform;
+                -webkit-transform-origin: 100% 0;
+                -ms-transform-origin: 100% 0;
+                transform-origin: 100% 0;
+                background: #73e450;
+                opacity: .9;
+                // position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 100%;
+                z-index: 333
+            }
+
             &:hover {
-                color: $green;
+                color: white;
+
+                &:after {
+                    -webkit-transform: scaleX(1);
+                    -ms-transform: scaleX(1);
+                    transform: scaleX(1);
+                    -webkit-transform-origin: left;
+                    -ms-transform-origin: left;
+                    transform-origin: left
+                }
             }
         }
     }
@@ -24,9 +58,29 @@
     .social-links {
         a {
             transition: all .33s;
+
             &:hover {
                 transform: rotate(360deg)
             }
         }
     }
+}
+
+
+.header-mobile {
+    display: none;
+}
+
+
+
+@media (max-width: 767px) {
+    .header-mobile {
+        display: block;
+    }
+
+    .header {
+        display: none;
+    }
+
+    
 }

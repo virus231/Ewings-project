@@ -15,19 +15,19 @@
 </head>
 
 <body>
-    
+
     <header class="header fixed-top pt-4">
         <div class="container">
             <div class="row d-flex align-items-center justify-content-between">
-                <div class="col-lg-2">
+                <div class="col-sm-12 text-sm-center mb-sm-3 col-lg-2 ">
                     <div class="logo">
                         <a href="#" class="logo-link">
                             <img src="./images/logo.svg" class="logo-img" alt="Logo">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-7 ">
-                    <nav class="menu-list d-flex justify-content-between">
+                <div class=" col-lg-7 mb-sm-3 ">
+                    <nav class="menu-list d-flex justify-content-between justify-content-sm-between">
                         <a href="#" class="menu-lists__link">
                             Про проект
                         </a>
@@ -51,7 +51,7 @@
                         </a>
                     </nav>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-sm-3 offset-sm-9 justify-content-sm-center col-lg-2 offset-lg-0 ">
                     <div class="social-links d-flex justify-content-around">
                         <a href="#">
                             <img src="images/facebook.svg" alt="facebook">
@@ -59,6 +59,27 @@
                         <a href="#">
                             <img src="images/instagram.svg" alt="instagram">
                         </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="header-mobile fixed-top pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="logo">
+                        <a href="" class="logo-link">
+                            <img src="images/logo-mobile.svg" alt="Logo Mobile">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="btn-bg">
+	
+                    
                     </div>
                 </div>
             </div>
@@ -68,8 +89,8 @@
     <section class="promo pt-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 pt-5 promo-wrapper">
-                    <div class="promo-block">
+                <div class="col-lg-7 pt-4 promo-wrapper">
+                    <div class="promo-block text-center text-md-left">
                         <p class="promo-subheading">
                             Будь вільним
                         </p>
@@ -78,9 +99,9 @@
                             E-wings
                         </h1>
                     </div>
-                    <div class="promo-how">
-                        <div class="how pt-4">
-                            <a href="#" class="how__go mr-4">
+                    <div class="promo-how ">
+                        <div class="how pt-4 d-flex flex-column align-items-center d-md-block">
+                            <a href="#" class="how__go  mb-3 mr-0 mr-md-4">
                                 Поїхали
                             </a>
                             <a href="#" class="how__work">
@@ -88,14 +109,49 @@
                             </a>
                         </div>
                     </div>
-                    div 
+                    <div class="promo-store d-block justify-content-between text-center mt-5 d-md-flex text-md-left flex-md-column">
+                        <a href="#" class="mr-sm-2">
+                            <img src="images/app-store.png" alt="App-Store">
+                        </a>
+                        <a href="#" class="mt-4">
+                            <img src="images/google-play.png" alt="Google-Play">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="about mt-5 mb-5">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-6">
+                    <div class="block-about">
+                        <span class="block-about__subheading text-uppercase">
+                            Про проект
+                        </span>
+                        <h2 class="block-about__title">
+                            E-wings це не просто перший шерінг електросамокатів в Україні
+                        </h2>
+                        <p class="block-about__desc">
+                            <span>E</span>
+                            wings це проект пополяризації альтернативних видів транспорту який допоможе дістатись швидко в потрібну локацію, не створюючи транспортних заторів і без забруднення повітря. e-wings — це партнерська програма яка допоможе тобі внести свій вклад в проект та навіть отримувати за це відсоток.
+                        </p>
+                    </div>
+                </div>
 
-    <script src="./js/bootstrap.min.js"></script>
+                <div class="col-lg-6">
+                    <div class="about-pic">
+                        <img class="about-img" src="images/about-img.png" alt="About">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

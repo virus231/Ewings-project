@@ -68,5 +68,41 @@
         }
     }
 
+    &-store {
+        a {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
 
+@media (max-width: 767px) {
+    .promo {
+        background: url('../images/back-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: bottom;
+    }
+
+    .promo-block {
+        margin-top: 0px !important;
+    }
+
+    .how__go {
+        padding: 12px 45px 12px 41px !important
+    }
+}
+
+@media (max-width: 567px) {
+    .promo-subheading {
+        font-size: 25px;
+    }
+
+    .promo-title {
+        font-size: 33px;
+        span {
+            font-size: 36px;
+        }
+    }
 }

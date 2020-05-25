@@ -1,0 +1,44 @@
+
+.about {
+    padding-top: 70px;
+    
+}
+
+.block-about {
+
+    &__subheading {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        color: $green;
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        color: #727878;
+    }
+
+
+    &__desc {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        color: #535353;
+        z-index: 12312313;
+
+        span {
+            background: url('../imaages/back-mobile.svg');
+            width: 100px;
+        }
+    }
+}
+
+.about-pic {
+    
+
+}
