@@ -77,6 +77,19 @@
     }
 }
 
+@media (max-width: 1440px) {
+    .about {
+        background-position-x: center !important;
+        background-position-y: 140px !important;
+        padding-top: 50px !important;
+        &-row {
+            flex-direction: column;
+        }
+    }
+
+    
+}
+
 @media (max-width: 767px) {
     .promo {
         background: url('../images/back-mobile.png');

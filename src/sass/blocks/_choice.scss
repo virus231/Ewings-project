@@ -1,0 +1,40 @@
+
+.choice {
+    background: url('../images/Rectangle 6.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 260px !important;
+
+    &-title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        color: $green;
+    }
+
+    
+}
+
+h2 {
+    strong {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        color: #727878;
+    }
+}
+
+.lead {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+
+    a {
+        color: $green;
+        text-decoration: underline;
+    }
+}

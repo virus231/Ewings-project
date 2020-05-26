@@ -7,8 +7,12 @@
 body {
     font-size: 14px;
     color: #FFFFFF;
-    background: black;
+    background: #f9f9f9;
     font-family: 'Rubik', 'Montserrat',sans-serif;
+}
+
+.container {
+    max-width: 1170px !important;
 }
 
 a {
@@ -26,6 +30,12 @@ a {
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/about';
+@import 'blocks/choice';
+@import 'blocks/actions';
+@import 'blocks/set';
+
+
+
 
 
 
