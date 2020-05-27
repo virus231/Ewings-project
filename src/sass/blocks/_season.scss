@@ -5,7 +5,8 @@ $transitionSpeed: 200ms;
     background: url('../images/back-season.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100vh;
+    // height: 100vh;
+    background-position-x: right;
 }
 
 .season-block {
@@ -144,4 +145,17 @@ input[type="submit"] {
         color: white;
         cursor: pointer;
     }
+}
+
+
+button {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+    background: linear-gradient(73.01deg, #52C600 13.64%, #97FF13 100%);
+    border-radius: 38px;
+    border: none;
+    padding: 16px 60px;    
 }
