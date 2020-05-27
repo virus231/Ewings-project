@@ -1,0 +1,87 @@
+$transitionSpeed: 200ms;
+
+
+.season-ticket {
+    background: url('../images/back-season.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+
+.season-block {
+    span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        color: $green
+    }
+
+    h3 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        color: #727878;
+
+        span {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 34px;
+            color: $green;
+        }
+    }
+}
+
+
+input[type="checkbox"]+label {
+    //   position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 3px solid;
+    border-image: linear-gradient(180deg, #52C600 0%, #97FF13 100%);
+    border-image-slice: 1;
+    border-radius: 100%;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    transition: all ease-out $transitionSpeed;
+    text-indent: 90px;
+    // font: normal normal 25px/25px;
+    white-space: nowrap;
+    color: #727878;
+    user-select: none;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 25px;
+        border-bottom: 3px solid $green;
+        border-left: 3px solid $green;
+        top: 25%;
+        left: 50%;
+        transform-origin: bottom left;
+        transform: rotate(-45deg);
+        opacity: 0;
+        transition: all ease-out $transitionSpeed;
+    }
+}
+
+input[type="checkbox"]:checked+label {
+    border: 3px solid $green;
+
+    &:after {
+        opacity: 1;
+        width: 70px;
+    }
+}
+
+#chk, #chk2 {
+    display: none;
+}
