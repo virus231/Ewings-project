@@ -1,0 +1,42 @@
+.partnership {
+    background: url('../images/bg-gray.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    
+    &-title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        color: $green;
+    }
+
+    h3 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        color: #8b8b8b;
+    }
+
+    .lead {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        color: #727878;
+    }
+
+    .btn {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+
+        &:hover {
+            color: black;
+
+        }
+    }
+}

@@ -2,8 +2,7 @@
     background: url('../images/map-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 976px;
-    // background-position-x: -100px;
+    height: 900px;
     background-position-y: center;
 
     &-question {
@@ -42,6 +41,7 @@
 .order-block {
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(36, 32, 32, 0.397);
 
     &__title {
         color: $green;
@@ -83,4 +83,12 @@
 
 .from {
     color: #8b8b8b;
+}
+
+
+.input-group-order {
+    label {
+        position: absolute;
+        left: 60px;
+    }
 }

@@ -358,12 +358,12 @@
                     <div class="order-inputs">
                         <form>
                             <div class="input-group">
-                              <label for="first-name">Ім'я</label>
-                              <input type="text" id="first-name">
+                                <label for="first-name">Ім'я</label>
+                                <input type="text" id="first-name">
                             </div>
                             <div class="input-group">
                                 <label for="first-name">Телефон</label>
-                                <input type="tel" id="first-name" >
+                                <input type="tel" id="first-name">
                             </div>
                             <button class="btn" type="submit" class="mt-5 mb-5 text-uppercase">
                                 Замовити
@@ -385,13 +385,13 @@
     </section>
 
     <div class="container pt-5">
-        
+
     </div>
 
     <section class="order">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6"> 
+                <div class="col-lg-6">
                     <div class="order-question d-flex align-items-start ">
                         <span>asd</span>
                         <p class="ml-3">
@@ -402,8 +402,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-7">
-                    <div class="img-order pr-3" >
-                        <img  src="images/order-img.png" alt="">
+                    <div class="img-order pr-3">
+                        <img src="images/order-img.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -414,12 +414,12 @@
                             </span>
                             вже зараз або бронюй e-wings для компанії
                         </h3>
-                        <form class="order-block p-3">
-                            <p class="order-block__title text-center">
+                        <form class="order-block p-3 pb-5">
+                            <p class="order-block__title text-center pt-2">
                                 Розрахувати вартість оренди
                             </p>
 
-                            <div class="count-order d-flex justify-content-md-around">
+                            <div class="count-order pt-3 d-flex justify-content-md-around">
                                 <div class=" ml-3 count-sam d-flex align-items-center justify-content-between">
                                     <span>0</span>
                                     <img class="ml-2" src="images/count-sam.svg" alt="">
@@ -431,18 +431,455 @@
                                     <img class="ml-2" src="images/count-sam.svg" alt="">
                                     <button class="plus ml-2 px-2">+</button>
                                     <button class="min ml-1 px-2">-</button>
-                                </div>   
+                                </div>
                             </div>
                             <span class="from">
                                 * замовлення можливе лише від 3-х одиниць
                             </span>
+
+                            <div class="input-group input-group-order  d-flex justify-content-center">
+                                <label for="termin">Термін оренди</label>
+                                <input type="number" id="termin">
+                            </div>
+                            <div class="input-group input-group-order d-flex justify-content-center">
+                                <label for="first-name">Ім'я</label>
+                                <input type="text" id="first-name">
+                            </div>
+                            <div class="input-group input-group-order d-flex justify-content-center">
+                                <label for="tel">Телефон</label>
+                                <input type="tel" id="tel">
+                            </div>
+
+                            <button class="btn d-flex  m-auto" type="submit" class="mt-5 mb-1 text-uppercase">
+                                Дізнатись вартість
+                            </button>
+
+
                         </form>
                     </div>
                 </div>
             </div>
-        </div?>
+            </div?>
     </section>
 
+    <section class="partnership">
+        <div class="container align-items-end justify-content-center d-flex">
+            <div class="row align-items-top text-left">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <p class="partnership-title mb-4 mt-5 text-uppercase">
+                        Партнерство
+                    </p>
+                    <h3>
+                        Співпраця з базами відпочинку, готельними комплексами та туристичними фірмами
+                    </h3>
+                    <p class="lead pt-2">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                    </p>
+                    <p class="mt-4">
+                        <a href="#" class="btn btn-primary px-5">
+                            Більше
+                            <img src="images/arrows.svg" alt="">
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-12 col-sm-4 col-md-6 col-lg-4 m-auto pt-5">
+                    <img alt="image" class="" src="images/partnership-img.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <div class="container my-5">
+        <!--Section: Content-->
+        <section class="faq">
+            <h6 class=" text-uppercase  mb-4 text-center">FAQ</h6>
+            <!-- Section heading -->
+
+            <div class="row">
+                <div class="col-md-12 col-lg-10 mx-auto mb-5">
+
+                    <!--Accordion wrapper-->
+                    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                        <!-- Accordion card -->
+                        <div class="card mb-2 p-1">
+
+                            <!-- Card header -->
+                            <div class="card-header border-bottom border-light" role="tab" id="headingOne1">
+                                <a data-toggle="collapse" class="d-flex align-items-center" data-parent="#accordionEx"
+                                    href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                    <img src="images/question icon.svg" alt="">
+
+                                    <h5 class="pl-5 mb-0">
+                                        Яка вартість поїздки?
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    Absolutely! We work with top payment companies which guarantees your safety and
+                                    security. All billing information is stored on our payment processing partner which
+                                    has the most stringent level of certification available in the payments industry.
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card mb-2 border-bottom-0 border-left border-right border-light">
+
+                            <!-- Card header -->
+                            <div class="card-header border-bottom border-light" role="tab" id="headingTwo2">
+                                <a class="collapsed d-flex align-items-center" data-toggle="collapse"
+                                    data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="false"
+                                    aria-controls="collapseTwo2">
+                                    <img src="images/question icon.svg" alt="">
+                                    <h5 class=" pl-5 black-text font-weight-normal mb-0">
+                                        Як знайти самокат?
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    Currently, we only offer monthly subscription. You can upgrade or cancel your
+                                    monthly account at any time with no further obligation.
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card mb-2 border-bottom-0 border-left border-right border-light">
+
+                            <!-- Card header -->
+                            <div class="card-header border-bottom border-light" role="tab" id="headingTwo2">
+                                <a class="collapsed d-flex align-items-center" data-toggle="collapse"
+                                    data-parent="#accordionEx" href="#collapseTwo3" aria-expanded="false"
+                                    aria-controls="collapseTwo3">
+                                    <img src="images/question icon.svg" alt="">
+
+                                    <h5 class="pl-5 black-text font-weight-normal mb-0">
+                                        Як розблокувати самокат?
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseTwo3" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    Currently, we only offer monthly subscription. You can upgrade or cancel your
+                                    monthly account at any time with no further obligation.
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card mb-2 border-bottom-0 border-left border-right border-light">
+
+                            <!-- Card header -->
+                            <div class="card-header border-bottom border-light" role="tab" id="headingThree3">
+                                <a class="collapsed d-flex align-items-center" data-toggle="collapse"
+                                    data-parent="#accordionEx" href="#collapseThree4" aria-expanded="false"
+                                    aria-controls="collapseThree4">
+                                    <img src="images/question icon.svg" alt="">
+
+                                    <h5 class=" pl-5 black-text font-weight-normal mb-0">
+                                        Де я можу приписувати самокат, після закінчення поїздки?
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseThree4" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    You can cancel your subscription anytime in your account. Once the subscription is
+                                    cancelled, you will not be charged next month. You will continue to have access to
+                                    your account until your current subscription expires.
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card mb-2 border-left border-right border-light">
+
+                            <!-- Card header -->
+                            <div class="card-header border-bottom border-light" role="tab" id="headingThree4">
+                                <a class="collapsed d-flex align-items-center" data-toggle="collapse"
+                                    data-parent="#accordionEx" href="#collapseThree5" aria-expanded="false"
+                                    aria-controls="collapseThree5">
+                                    <img src="images/question icon.svg" alt="">
+
+                                    <h5 class="pl-5 black-text font-weight-normal mb-0">
+                                        Як завершити поїздку?
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseThree5" class="collapse" role="tabpanel" aria-labelledby="headingThree4"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    Unfortunately, not. We do not issue full or partial refunds for any reason.
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+
+                        <!-- Accordion card -->
+                        <div class="card mb-2 border-left border-right border-light">
+
+                            <!-- Card header -->
+                            <div class="card-header border-bottom border-light" role="tab" id="headingThree4">
+                                <a class="collapsed d-flex align-items-center" data-toggle="collapse"
+                                    data-parent="#accordionEx" href="#collapseThree6" aria-expanded="false"
+                                    aria-controls="collapseThree6">
+                                    <img src="images/question icon.svg" alt="">
+
+                                    <h5 class="pl-5 black-text font-weight-normal mb-0">
+                                        Як оплатити поїздку?
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseThree6" class="collapse" role="tabpanel" aria-labelledby="headingThree4"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    Unfortunately, not. We do not issue full or partial refunds for any reason.
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                    </div>
+                    <!-- Accordion wrapper -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-5">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        <img src="images/footer-logo.svg" alt="Logo">
+                    </h6>
+                    <p class="d-flex justify-content-between">
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+
+                        <a href="#">
+                            Rental Agreement
+                        </a>
+                    </p>
+                    <p class="d-flex justify-content-between">
+                        <a href="#">
+                            Payment Policy
+                        </a>
+
+                        <a href="#">
+                            Terms of Service
+                        </a>
+                    </p>
+                    <div class="promo-store d-flex align-items-center mt-5">
+                        <a href="#" class="mr-sm-2">
+                            <img src="images/app-store.png" alt="App-Store">
+                        </a>
+                        <a href="#" class="">
+                            <img src="images/google-play.png" alt="Google-Play">
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        Контакти
+                    </h6>
+                    <p class="">
+                        <i class="fas fa-phone mr-3"></i>
+                        <img src="images/tel.svg" alt="Telefon">
+                        <a href="#" class="ml-2 mb-0 pb-0">
+                            +38 (068) 340 90 50
+                        </a>
+                        
+                        <p class="ml-5 mt-0">
+                            <a href="#">
+                                +38 (073) 340 90 50
+                            </a>
+                        </p>
+                        
+                        
+                    </p>
+                    <p>
+                        
+                    </p>
+                    <p class="ml-3">
+                        <img src="images/Post.svg" alt="Post">
+                        <a href="#" class="ml-2">
+                            ewingsukraine@gmail.com
+                        </a>
+                    </p>
+                    <p class="ml-3">
+                        <img src="images/pin 1.svg" alt="Pin">
+                        <a href="" class="ml-2">
+                            Runok Sqr., Lviv 79053 Ukraine
+                        </a> 
+                    </p>
+                    
+                    
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        Партнерство
+                    </h6>
+                    <p>
+                        <a href="#!">
+                            Про проект
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#!">
+                            Співпраця                            
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#!">
+                            Інвесторам
+                        </a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        Швидкий доступ
+                    </h6>
+                    <p>
+                        <a href="#!">
+                            Як це працює?
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#!">
+                            Абонементи
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#!">
+                            Доставка
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+
+                
+
+            </div>
+            <!-- Footer links -->
+
+            <hr style="background-color: #52C600; height: 2px;">
+
+            <!-- Grid row -->
+            <div class="row d-flex align-items-center pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-6">
+
+                    <!--Copyright-->
+                    <p class="text-center text-md-left">
+                        E-wings © 2020. All Rights Reserved. Created by
+                        <a href="#">
+                            <strong> 
+                                Siteen
+                            </strong>
+                        </a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-5 d-flex justify-content-around col-lg-4 ml-lg-0">
+
+                    <p>Слідкуй за нами:</p>
+
+                    <!-- Social buttons -->
+                    <div class="text-center">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <img src="images/instagram.svg" alt="Instagram">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <img src="images/facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+    </footer>
+    <!-- Footer -->
 
 
 
@@ -466,7 +903,7 @@
 
 
 
- 
+
 
 
 

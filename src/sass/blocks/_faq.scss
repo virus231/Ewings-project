@@ -1,0 +1,39 @@
+.faq {
+    h6 {
+        color: $green;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+    }
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 0 20px #e0c3c3
+}
+
+.card-header {
+    background-color: white;
+    border-radius: 20px;
+
+    h5 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: #727878;
+    }
+
+    .collapsed {
+        border-radius: 20px;
+    }
+}
+
+.card-body {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #727878;
+}
