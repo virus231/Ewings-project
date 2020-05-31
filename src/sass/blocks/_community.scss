@@ -1,0 +1,65 @@
+.community {
+    background: url('../images/bg-community.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-attachment: fixed;
+    background-position-x: right;
+
+    &-touristy {
+        h2 {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 34px;
+            color: $green;
+        }
+    
+        h5 {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            color: #727878;
+        }
+    
+        p {
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            color: #727878;
+        }
+    }
+
+    h2 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        color: $green;
+    }
+
+    h5 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        color: #727878;
+    }
+
+    p {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        color: #727878;
+    }
+}
+
+.elipse {
+    background: linear-gradient(250.77deg, #52C600 5.41%, #97FF13 88.57%);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
