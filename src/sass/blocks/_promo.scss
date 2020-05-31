@@ -1,5 +1,5 @@
 .promo {
-    background: url('../images/promo.png');
+    background: #a2a6a5 url('../images/promo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right bottom;
@@ -39,15 +39,22 @@
         .how {
 
             &__go {
-                background: linear-gradient(75.39deg, #52C600 13.64%, #97FF13 100%);
+                background: linear-gradient(75.39deg, #52C600 14%, rgb(108, 190, 0) 100%);
                 padding: 12px 30px 12px 35px;
                 border-radius: 38px;
+                border: 2px solid transparent;
                 font-family: Montserrat;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 20px;
+                transition: all .33s;
 
                 &:hover {
+                    color: white;
+                    background: none;
+                    border: 2px solid #3fff00;
+
+                    // border: inherit solid $green;
                     
                 }
             }

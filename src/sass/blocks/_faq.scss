@@ -23,6 +23,7 @@
         font-weight: normal;
         font-size: 24px;
         color: #727878;
+        width: 100%;
     }
 
     .collapsed {
@@ -37,3 +38,22 @@
     font-size: 16px;
     color: #727878;
 }
+
+.arrow {
+    transition: all .33s;
+}
+
+// .arrow {
+//     float: right;
+//     width: 80px;
+//     height: 80px;
+
+//     background: url('../images/arrow-faq.svg');
+//     background-repeat: no-repeat;
+//     background-position-x: right;
+// }
+
+.arrow.active {
+    transform: scaleY(-1);
+ }
+ 

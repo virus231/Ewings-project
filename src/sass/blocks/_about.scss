@@ -8,6 +8,14 @@
     &-item {
         background-color: #fff;
         border-radius: 10px;
+        box-shadow: 0px 0px 20px gainsboro;
+        cursor: pointer;
+        transition: all .33s;
+
+        &:hover {
+            box-shadow: 0px 0px 20px rgb(143, 143, 143);
+
+        }
         
         &__title {
             font-family: Montserrat;

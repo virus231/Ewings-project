@@ -7,4 +7,13 @@
         font-size: 40px;
         color: $green;
     }
+
+
+    .lead {
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
 }
