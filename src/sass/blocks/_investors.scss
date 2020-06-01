@@ -35,3 +35,26 @@
         }
     }
 }
+
+
+@media (max-width: 1300px) {
+    .investors {
+        &-block {
+            // display: flex;
+            flex-direction: column-reverse;
+
+            &__img {
+                max-width: 85%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    // .investors-block__img {
+    //     img {
+    //         max-width: 70%;
+    //     }
+    // }
+}

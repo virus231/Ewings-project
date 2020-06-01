@@ -2,8 +2,10 @@
     background: url('../images/bg-community.png');
     background-repeat: no-repeat;
     background-size: 50%;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     background-position-x: right;
+    background-position-y: center;
+
 
     &-touristy {
         h2 {
@@ -62,4 +64,27 @@
     height: 20px;
     display: inline-block;
     border-radius: 10px;
+}
+
+@media (max-width: 1270px) {
+    .community {
+        background-position-y: bottom;
+        background-position-x: center;
+        background-size: contain;
+
+
+        &-block {
+            flex-direction: column;
+        }
+
+        
+    }
+
+    
+}
+
+@media (max-width: $screen-md-max) {
+    .community-touristy-block {
+        flex-direction: column-reverse;
+    }
 }

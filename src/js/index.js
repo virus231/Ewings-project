@@ -109,10 +109,9 @@ $(document).ready(function(e) {
     let cnt = $('#count1').html(+$('#count1').html()+1);
     
     if(cnt.html() >= 3) {
-      $('.plus').prop('disabled', true);
-    } else {
       $('.min').prop('disabled', false);
-
+    } else {
+      $('.min').prop('disabled', true);
     }
   });
 
@@ -120,11 +119,9 @@ $(document).ready(function(e) {
     e.preventDefault();
     let cnt = $('#count1').html(+$('#count1').html()-1);
 
-    if(cnt.html() >= 1) {
-      $('.plus').prop('disabled', false);
-    } else {
+    if(cnt.html() <= 3) {
       $('.min').prop('disabled', true);
-    }
+    } 
   });
 });
 
@@ -135,9 +132,9 @@ $(document).ready(function(e) {
     let cnt = $('#count2').html(+$('#count2').html()+1);
     
     if(cnt.html() >= 3) {
-      $('.plus-1').prop('disabled', true);
-    } else {
       $('.min-1').prop('disabled', false);
+    } else {
+      $('.min-1').prop('disabled', true);
 
     }
   });
@@ -146,11 +143,21 @@ $(document).ready(function(e) {
     e.preventDefault();
     let cnt = $('#count2').html(+$('#count2').html()-1);
 
-    if(cnt.html() >= 1) {
-      $('.plus-1').prop('disabled', false);
-    } else {
+    if(cnt.html() <= 3) {
       $('.min-1').prop('disabled', true);
-    }
+    } 
   });
 });
 
+
+$(document).ready(function(){
+    $(".button a").click(function(){
+        $(".overlay").fadeToggle(200);
+       $(this).toggleClass('btn-open').toggleClass('btn-close');
+    });
+});
+$('.overlay').on('click', function(){
+    $(".overlay").fadeToggle(200);   
+    $(".button a").toggleClass('btn-open').toggleClass('btn-close');
+    open = false;
+});
