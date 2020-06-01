@@ -3,7 +3,7 @@ $('#toggle2').click(function() {
   $('#overlay').toggleClass('open');
  });
 
-var inputGroups = [...document.querySelectorAll(".input-group")];
+let inputGroups = [...document.querySelectorAll(".input-group")];
 
 inputGroups.forEach(inputGroup => {
   var label = inputGroup.children[0];
@@ -70,7 +70,7 @@ $('#headingFour123').click(function (e) {
   $(this).find('.arrow').toggleClass('active');
 });
 
-var linkNav = document.querySelectorAll('a.menu-lists__link, a.how__go, a.how__work'), //выбираем все ссылки к якорю на странице
+let linkNav = document.querySelectorAll('a.menu-lists__link, a.how__go, a.how__work'), //выбираем все ссылки к якорю на странице
   V = 0.3;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
 for (var i = 0; i < linkNav.length; i++) {
   linkNav[i].addEventListener('click', function (e) { //по клику на ссылку

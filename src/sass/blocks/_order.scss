@@ -94,3 +94,11 @@
         left: 60px;
     }
 }
+
+@media (max-width: $screen-md-max) {
+    .order {
+        height: 100vh;
+        margin-bottom:90px;
+        background-position-y: 20%;
+    }
+}

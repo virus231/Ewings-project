@@ -13,7 +13,7 @@
             top:50%;
             left:50%;
             transform:translate(-50%,-62%);
-            width:670px;
+            // width:670px;
             height:700px;
             object-fit:cover;
         }
@@ -29,4 +29,29 @@
         }
     }
 
+}
+
+.img-app-mobile {
+    display: none;
+}
+
+
+@media (max-width: $screen-lg-max) {
+    .set-wrap {
+        flex-direction: column-reverse;
+    }
+
+    .img-app-link {
+        display: none;
+    }
+
+    .img-app-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .set {
+        max-height: 500px;
+    }
 }

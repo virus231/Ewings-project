@@ -172,3 +172,10 @@ input[type="submit"] {
 
     }
 }
+
+
+@media (max-width: $screen-xs-max) {
+    input[type="checkbox"]+label {
+        font-size: 20px;
+    }
+}
