@@ -3,10 +3,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    height: 701px;
+    height: 75vh;
 
     &-title {
         height: 600px;
         
+    }
+}
+
+@media (max-width: 575px) {
+    .membership {
+        background-size: unset;
+
     }
 }

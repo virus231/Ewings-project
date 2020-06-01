@@ -1,3 +1,8 @@
+$('#toggle2').click(function() {
+  $(this).toggleClass('active');
+  $('#overlay').toggleClass('open');
+ });
+
 var inputGroups = [...document.querySelectorAll(".input-group")];
 
 inputGroups.forEach(inputGroup => {
@@ -90,10 +95,10 @@ for (var i = 0; i < linkNav.length; i++) {
 }
 
 
-$('#chk, #chk2').click(function(){
-	if ($(this).is(':checked')) {
-		 $('#chk, #chk2').not(this).prop('checked', false);
-	}
+$('#chk, #chk2').click(function () {
+  if ($(this).is(':checked')) {
+    $('#chk, #chk2').not(this).prop('checked', false);
+  }
 });
 
 
@@ -102,36 +107,36 @@ $('.min-1').prop('disabled', true);
 
 
 // var counter = 1;
-$(document).ready(function(e) {
-  
-  $('.plus').click(function(e) {
+$(document).ready(function (e) {
+
+  $('.plus').click(function (e) {
     e.preventDefault();
-    let cnt = $('#count1').html(+$('#count1').html()+1);
-    
-    if(cnt.html() >= 3) {
+    let cnt = $('#count1').html(+$('#count1').html() + 1);
+
+    if (cnt.html() >= 3) {
       $('.min').prop('disabled', false);
     } else {
       $('.min').prop('disabled', true);
     }
   });
 
-  $('.min').click(function(e) {
+  $('.min').click(function (e) {
     e.preventDefault();
-    let cnt = $('#count1').html(+$('#count1').html()-1);
+    let cnt = $('#count1').html(+$('#count1').html() - 1);
 
-    if(cnt.html() <= 3) {
+    if (cnt.html() <= 3) {
       $('.min').prop('disabled', true);
-    } 
+    }
   });
 });
 
 
-$(document).ready(function(e) {
-  $('.plus-1').click(function(e) {
+$(document).ready(function (e) {
+  $('.plus-1').click(function (e) {
     e.preventDefault();
-    let cnt = $('#count2').html(+$('#count2').html()+1);
-    
-    if(cnt.html() >= 3) {
+    let cnt = $('#count2').html(+$('#count2').html() + 1);
+
+    if (cnt.html() >= 3) {
       $('.min-1').prop('disabled', false);
     } else {
       $('.min-1').prop('disabled', true);
@@ -139,25 +144,25 @@ $(document).ready(function(e) {
     }
   });
 
-  $('.min-1').click(function(e) {
+  $('.min-1').click(function (e) {
     e.preventDefault();
-    let cnt = $('#count2').html(+$('#count2').html()-1);
+    let cnt = $('#count2').html(+$('#count2').html() - 1);
 
-    if(cnt.html() <= 3) {
+    if (cnt.html() <= 3) {
       $('.min-1').prop('disabled', true);
-    } 
+    }
   });
 });
 
 
-$(document).ready(function(){
-    $(".button a").click(function(){
-        $(".overlay").fadeToggle(200);
-       $(this).toggleClass('btn-open').toggleClass('btn-close');
-    });
+$(document).ready(function () {
+  $(".button a").click(function () {
+    $(".overlay").fadeToggle(200);
+    $(this).toggleClass('btn-open').toggleClass('btn-close');
+  });
 });
-$('.overlay').on('click', function(){
-    $(".overlay").fadeToggle(200);   
-    $(".button a").toggleClass('btn-open').toggleClass('btn-close');
-    open = false;
+$('.overlay').on('click', function () {
+  $(".overlay").fadeToggle(200);
+  $(".button a").toggleClass('btn-open').toggleClass('btn-close');
+  open = false;
 });
