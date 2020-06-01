@@ -1,3 +1,7 @@
+.popup2 {
+    position: fixed;
+}
+
 .promo {
     background: #a2a6a5 url('../images/promo.png');
     background-repeat: no-repeat;
@@ -84,6 +88,9 @@
         }
     }
 }
+
+
+
 
 @media (max-width: 1440px) {
     .about {

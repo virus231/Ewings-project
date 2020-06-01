@@ -1,7 +1,31 @@
-$('#toggle2').click(function() {
+
+let btn = document.getElementById('button')
+
+btn.addEventListener('click', function () {
+  swal("Write something here:",{
+    content: "input",
+    title: "Виникли питання?",
+    text: "Залиште ваш номер для зворотнього дзвінка і ми допоможемо вам!",
+    icon: "warning",
+    buttons: true,
+    dangerMode: true,
+  })
+  .then((willDelete) => {
+    if (willDelete) {
+      swal("Poof! Your imaginary file has been deleted!", {
+        icon: "success",
+      });
+    } else {
+      swal("Your imaginary file is safe!");
+    }
+  });
+})
+
+
+$('#toggle2').click(function () {
   $(this).toggleClass('active');
   $('#overlay').toggleClass('open');
- });
+});
 
 let inputGroups = [...document.querySelectorAll(".input-group")];
 
