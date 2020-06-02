@@ -126,44 +126,74 @@ $('#chk, #chk2').click(function () {
 });
 
 
+
+
 $('.min').prop('disabled', true);
 $('.min-1').prop('disabled', true);
 
 
-// var counter = 1;
+// Count - 1
+let max = 10
 $(document).ready(function (e) {
 
   $('.plus').click(function (e) {
     e.preventDefault();
     let cnt = $('#count1').html(+$('#count1').html() + 1);
 
-    if (cnt.html() >= 3) {
-      $('.min').prop('disabled', false);
-    } else {
+    if (cnt.html() <= 0 ) {
       $('.min').prop('disabled', true);
+    } else if (cnt.html() >= 1) {
+      $('.min').prop('disabled', false);
     }
+
+    if( cnt.html() > 0) {
+      $('.plus').prop('disabled', false);
+    }
+
+    if( cnt.html() == max) {
+      $('.plus').prop('disabled', true);
+    } else {
+      $('.plus').prop('disabled', false);
+
+    }
+
   });
 
   $('.min').click(function (e) {
     e.preventDefault();
     let cnt = $('#count1').html(+$('#count1').html() - 1);
 
-    if (cnt.html() <= 3) {
+    if (cnt.html() <= 0) {
       $('.min').prop('disabled', true);
+    }
+
+    if(cnt.html() >= 1){
+      $('.plus').prop('disabled', false)
     }
   });
 });
 
 
+// Count - 2
 $(document).ready(function (e) {
   $('.plus-1').click(function (e) {
     e.preventDefault();
     let cnt = $('#count2').html(+$('#count2').html() + 1);
 
-    if (cnt.html() >= 3) {
-      $('.min-1').prop('disabled', false);
-    } else {
+    if (cnt.html() <= 0 ) {
       $('.min-1').prop('disabled', true);
+    } else if (cnt.html() >= 1) {
+      $('.min-1').prop('disabled', false);
+    }
+
+    if( cnt.html() > 0) {
+      $('.plus-1').prop('disabled', false);
+    }
+
+    if( cnt.html() == max) {
+      $('.plus-1').prop('disabled', true);
+    } else {
+      $('.plus-1').prop('disabled', false);
 
     }
   });
@@ -172,8 +202,12 @@ $(document).ready(function (e) {
     e.preventDefault();
     let cnt = $('#count2').html(+$('#count2').html() - 1);
 
-    if (cnt.html() <= 3) {
+    if (cnt.html() <= 0) {
       $('.min-1').prop('disabled', true);
+    }
+
+    if(cnt.html() >= 1){
+      $('.plus-1').prop('disabled', false)
     }
   });
 });
@@ -211,8 +245,39 @@ $(function () {
           }
         });
         // при закрытии idModal2 открываем idModal1
+        // $(idModal2).on('hidden.bs.modal', function (e) {
+        //   $(idModal1).modal('show');
+        // });
+      };
+
+      twoModal('#modal-1', '#modal-2');
+      twoModal('#modal-1', '#modal-5');
+      twoModal('#modal-3', '#modal-4');
+
+    });
+
+
+    $(function () {
+
+      // функция с параметрами idModal1 (1 модальное окно) и idModal2 (2 модальное окно)
+      var twoModal = function (idModal1, idModal2) {
+        var showModal2 = false;
+        // при нажатии на ссылку в idModal2 устанавливаем переменной showModal2 значение равное true и закрываем idModal1
+        $('[href="' + idModal2 + '"]').click(function (e) {
+          e.preventDefault();
+          showModal2 = true;
+          $(idModal1).modal('hide');
+        });
+        // после закрытия idModal1, если значение showModal2 равно true, то открываем idModal2
+        $(idModal1).on('hidden.bs.modal', function (e) {
+          if (showModal2) {
+            showModal2 = false;
+            $(idModal2).modal('show');
+          }
+        });
+        // при закрытии idModal2 открываем idModal1
         $(idModal2).on('hidden.bs.modal', function (e) {
-          $(idModal1).modal('show');
+          $(idModal1).modal('hide');
         });
       };
 

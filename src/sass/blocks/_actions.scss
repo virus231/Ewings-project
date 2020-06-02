@@ -17,3 +17,9 @@
         }
     }
 }
+
+@media (max-width: $screen-xs-max) {
+    h2 strong {
+        font-size: 18px;
+    }
+}

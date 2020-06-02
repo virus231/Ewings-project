@@ -111,12 +111,18 @@
 
 @media (max-width: $screen-sm-max) {
     .order {
-        height: 115vh;
+        height: 1200px;
     }
 }
 
 @media (max-width: $screen-sm-max) {
     .count-order {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 375px) {
+    .order {
+        height: 1265px;
     }
 }

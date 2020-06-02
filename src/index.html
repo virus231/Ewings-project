@@ -67,9 +67,9 @@
         </div>
     </header>
 
-    <header class="header-mobile fixed-top pt-4">
+    <header class="header-mobile fixed-top mt-4">
         <div class="container">
-            <div class="row">
+            <div class="row header-row mt-3">
                 <div class="col-sm-3">
                     <div class="logo">
                         <a href="index.html" class="logo-link">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="button_container" id="toggle2">
+                    <div class="button_container mt-3" id="toggle2">
                         <span class="top"></span>
                         <span class="middle"></span>
                         <span class="bottom"></span>
@@ -145,9 +145,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-
-            </div>
         </div>
 
             <!-- Модальное окно 1 -->
@@ -168,24 +165,51 @@
                         Ми зв’яжемося з вами в лічені хвилини
                     </h4>
                   <!-- Содержимое модального окна 1 -->
-                    <p>
-                        <input type="text" name="text" placeholder="Введіть ваше ім'я">
+                    <p class="text-center mt-3">
+                        <input class="modal-input" type="text" name="text" placeholder="Введіть ваше ім'я...">
                     </p>
-                    <p>
-                        <input type="tel" name="tel">
+                    <p class="text-center">
+                        <input class="modal-input" type="tel" name="tel" placeholder="Введіть номер телефону...">
                     </p>
 
                 </div>
 
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                <div class="modal-footer  m-auto">
+                    <a href="#modal-2" type="button" class="btn btn-call btn-default" data-dismiss="modal">
                         Дзвонити
-                    </button>
+                    </a>
                 </div>
 
               </div>
             </div>
           </div>
+
+          <!-- Модальное окно 2 -->
+		  <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="modalLabel2">
+		    <div class="modal-dialog" role="document">
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <img src="images/logo.svg" alt="">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                    <span aria-hidden="true" class="close">
+                        <img class="close-img" src="images/close-icon.svg" alt="">
+                    </span>
+                  </button>
+
+		        </div>
+		        <div class="modal-body text-center">
+		          <img src="images/success.svg" alt="Succes">
+		          <h3 style="color: #52C600;">Дякуємо!</h3>
+		          <p class="succes-text">
+		          	Ваша заявка прийнята, ми зв’яжемося з вами якнайшвидше
+		          </p>
+		        </div>
+		        <!-- <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+		        </div> -->
+		      </div>
+		    </div>
+		  </div>
 
 
       
@@ -231,7 +255,7 @@
                 </div>
             </div>
             <div class="row mt-5 d-flex justify-content-between">
-                <div class="col-6 mb-md-3 col-lg-3 d-flex">
+                <div class="col-12 col-sm-6 col-md-6 mb-3 col-lg-3 d-flex">
                     <div class="about-item d-flex flex-column text-center px-3 py-5">
                         <img src="images/icon-tel.svg" alt="">
                         <p class="about-item__title pt-3">
@@ -243,7 +267,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-6 mb-md-3 col-lg-3 d-flex">
+                <div class="col-12 col-sm-6 col-md-6 mb-3 col-lg-3 d-flex">
                     <div class="about-item d-flex flex-column text-center px-3 py-5">
                         <img src="images/icon-shield.svg" alt="">
                         <p class="about-item__title pt-3">
@@ -255,7 +279,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-6 mb-md-3 col-lg-3 d-flex">
+                <div class="col-12 col-sm-6 col-md-6 mb-3 col-lg-3 d-flex">
                     <div class="about-item d-flex flex-column text-center px-3 py-5">
                         <img src="images/icon-samokat.svg" alt="">
                         <p class="about-item__title pt-3">
@@ -267,7 +291,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-6 mb-md-3 col-lg-3 d-flex">
+                <div class="col-12 col-sm-6 col-md-6 mb-3 col-lg-3 d-flex">
                     <div class="about-item d-flex flex-column text-center px-3 py-5">
                         <img src="images/icon-price.svg" alt="">
                         <p class="about-item__title pt-3">
@@ -293,12 +317,12 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="choice-img">
+                    <div class="choice-img text-center">
                         <img class="img-fluid" src="images/choice-samokat-1.png" alt="Самокат">
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="choice-img">
+                    <div class="choice-img text-center">
                         <img class="img-fluid" src="images/choice-samokat-2.png" alt="Самокат">
                     </div>
                 </div>
@@ -404,7 +428,7 @@
         </div>
     </section>
 
-    <section id="ticket" class="season-ticket mb-5">
+    <section id="ticket" class="season-ticket mb-5 mt-5">
         <div class="container">
             <div class="row ticket-block">
                 <div class="сol-12 col-lg-7 text-left mt-5">
@@ -425,14 +449,18 @@
                             <div class="choose-block ml-4 mt-5 d-block ">
                                 <div>
                                     <input type="checkbox" id="chk" required />
-                                    <label for="chk" class="mb-3 pt-2">
-                                        Тижневий абонемент на одиницю e-wings
+                                    <label for="chk" class="mb-5 pt-0 pb-5 pl-5">
+                                        Тижневий абонемент <br>
+                                        <span class="pl-5">
+                                            на одиницю e-wings
+                                        </span> 
                                     </label>
                                 </div>
-                                <div>
+                                <div class="mt-3">
                                     <input type="checkbox" id="chk2" required />
-                                    <label for="chk2" class="pt-2">
-                                        Місячний абонемент на одиницю e-wings
+                                    <label for="chk2" class=" pl-5">
+                                        Місячний абонемент <br>
+                                        <span class="pl-5">на одиницю e-wings</span> 
                                     </label>
                                 </div>
                             </div>
@@ -441,8 +469,8 @@
                                 <input type="text" id="first-name" required>
                             </div>
                             <div class="input-group">
-                                <label for="first-name">Телефон</label>
-                                <input type="tel" id="first-name" required>
+                                <label for="tel">Телефон</label>
+                                <input type="tel" id="tel" required>
                             </div>
                             <button class="btn" type="submit" class="mt-5 mb-5 text-uppercase">
                                 Замовити
@@ -453,8 +481,8 @@
 
                 </div>
 
-                <div class="col-lg-5 d-flex align-items-start ">
-                    <div class="d-flex align-content-sm-start" style="margin-top: -130px;">
+                <div class="col-lg-5  d-flex align-items-start ">
+                    <div class="d-flex align-content-sm-start season-img" style="margin-top: -130px;">
                         <img class="img-fluid w-100" src="images/season-samokat.png" alt="">
                     </div>
                 </div>
@@ -479,15 +507,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-lg-7">
+                <div class="col-12 col-lg-6">
                     <div class="img-order pr-3" style="margin-left: -70px;">
                         <img src="images/order-img.png" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-md-12 text-center col-lg-5">
+                <div class="col-md-12 text-center col-lg-6">
                     <div class="order-form d-flex justify-content-center flex-column align-items-center"
                         style="margin-top: -7px;">
-                        <h3 class="order-form__title text-center">
+                        <h3 class="order-form__title text-center mb-1" style="margin-top: -10px;">
                             <span>
                                 Замовляй доставку
                             </span>
@@ -601,11 +629,13 @@
                                     aria-controls="collapseOne1">
                                     <img src="images/question icon.svg" alt="">
 
-                                    <h5 class="pl-5  mb-0 d-flex justify-content-between">
+                                    <h5 class="pl-5  mb-0 d-flex justify-content-between align-items-center">
                                         Яка вартість поїздки?
                                         <!-- <span class="arrow"></span> -->
                                         <i class="arrow">
-                                            <img src="images/arrow-faq.svg" alt="">
+                                            <img class="arrow-main" src="images/arrow-down.svg" alt="">
+                                            <img class="arrow-mob" src="images/mob-arrow-up.svg" alt="">
+
                                         </i>
                                     </h5>
                                 </a>
@@ -634,10 +664,11 @@
                                     aria-controls="collapseTwo2">
                                     <img src="images/question icon.svg" alt="">
 
-                                    <h5 class=" pl-5 black-text font-weight-normal mb-0 d-flex justify-content-between">
+                                    <h5 class=" pl-5 black-text font-weight-normal mb-0 d-flex justify-content-between align-items-center">
                                         Як знайти самокат?
                                         <i class="arrow">
-                                            <img src="images/arrow-faq.svg" alt="">
+                                            <img class="arrow-main" src="images/arrow-up.svg" alt="">
+                                            <img class="arrow-mob" src="images/mob-arrow-down.svg" alt="">
                                         </i>
 
                                     </h5>
@@ -666,10 +697,11 @@
                                     aria-controls="collapseTwo3">
                                     <img src="images/question icon.svg" alt="">
 
-                                    <h5 class="pl-5 black-text font-weight-normal mb-0 d-flex justify-content-between">
+                                    <h5 class="pl-5 black-text font-weight-normal mb-0 d-flex justify-content-between align-items-center">
                                         Як розблокувати самокат?
                                         <i class="arrow">
-                                            <img src="images/arrow-faq.svg" alt="">
+                                            <img class="arrow-main" src="images/arrow-up.svg" alt="">
+                                            <img class="arrow-mob" src="images/mob-arrow-down.svg" alt="">
                                         </i>
                                     </h5>
                                 </a>
@@ -697,10 +729,11 @@
                                     aria-controls="collapseThree4">
                                     <img src="images/question icon.svg" alt="">
 
-                                    <h5 class=" pl-5 black-text font-weight-normal mb-0 d-flex justify-content-between">
+                                    <h5 class=" pl-5 black-text font-weight-normal mb-0 d-flex justify-content-between align-items-center">
                                         Де я можу приписувати самокат, після закінчення поїздки?
                                         <i class="arrow">
-                                            <img src="images/arrow-faq.svg" alt="">
+                                            <img class="arrow-main" src="images/arrow-up.svg" alt="">
+                                            <img class="arrow-mob" src="images/mob-arrow-down.svg" alt="">
                                         </i>
                                     </h5>
                                 </a>
@@ -729,10 +762,11 @@
                                     aria-controls="collapseThree5">
                                     <img src="images/question icon.svg" alt="">
 
-                                    <h5 class="pl-5 black-text font-weight-normal mb-0 d-flex justify-content-between">
+                                    <h5 class="pl-5 black-text font-weight-normal mb-0 d-flex justify-content-between align-items-center">
                                         Як завершити поїздку?
                                         <i class="arrow">
-                                            <img src="images/arrow-faq.svg" alt="">
+                                            <img class="arrow-main" src="images/arrow-up.svg" alt="">
+                                            <img class="arrow-mob" src="images/mob-arrow-down.svg" alt="">
                                         </i>
                                     </h5>
                                 </a>
@@ -760,10 +794,11 @@
                                     aria-controls="collapseThree6">
                                     <img src="images/question icon.svg" alt="">
 
-                                    <h5 class="pl-5 black-text font-weight-normal mb-0 d-flex justify-content-between">
+                                    <h5 class="pl-5 black-text font-weight-normal mb-0 d-flex justify-content-between align-items-center">
                                         Як оплатити поїздку?
                                         <i class="arrow">
-                                            <img src="images/arrow-faq.svg" alt="">
+                                            <img class="arrow-main" src="images/arrow-up.svg" alt="">
+                                            <img class="arrow-mob" src="images/mob-arrow-down.svg" alt="">
                                         </i>
                                     </h5>
                                 </a>

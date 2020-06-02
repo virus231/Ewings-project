@@ -163,7 +163,7 @@ input[type="submit"] {
     background: linear-gradient(73.01deg, #52C600 13.64%, #97FF13 100%);
     border-radius: 38px;
     border: none;
-    padding: 16px 60px;
+    padding: 15px 25px;
     transition: all .33s;
     
     &:hover {
@@ -176,6 +176,29 @@ input[type="submit"] {
 
 @media (max-width: $screen-xs-max) {
     input[type="checkbox"]+label {
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        // width: 40px;
+        // height: 40px;
+        // padding-top: 0 !important;
+    }
+
+    .choose-block label {
+        // width: 20px !important;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .season-img {
+        margin-top: -50px !important;
     }
 }
+
+
+@media (max-width: 320px) {
+    input[type="checkbox"]+label {
+        font-size: 14px;
+    }
+}
+

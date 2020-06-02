@@ -56,4 +56,24 @@
 .arrow.active {
     transform: scaleY(-1);
  }
+
+ @media (min-width: $screen-sm-min) {
+    .arrow {
+        &-mob {
+            display: none;
+        }
+    }
+ }
  
+
+ @media (max-width: $screen-xs-max) {
+    .card-header h5 {
+        font-size: 16px;
+    }
+
+    .arrow {
+        &-main {
+            display: none;
+        }
+    }
+ }

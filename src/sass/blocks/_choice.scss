@@ -38,3 +38,9 @@ h2 {
         text-decoration: underline;
     }
 }
+
+@media (max-width: $screen-md-max) {
+    .choice {
+        background-position-x: center;
+    }
+}

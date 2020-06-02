@@ -139,7 +139,7 @@ h1 {
 
 .button_container {
   position: fixed;
-  top: 4%;
+  top: 30px;
   right: 7%;
   height: $button-height;
   width: $button-width;
@@ -304,4 +304,17 @@ h1 {
     }
 
 
+}
+
+@media (max-width: $screen-xs-max) {
+  .button_container {
+    top: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-row,
+  .button_container {
+    margin-top: 0 !important;
+  }
 }

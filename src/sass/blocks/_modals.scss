@@ -1,5 +1,21 @@
-.modal-content {
-	background-color: #ededed;
+.modal {
+	&-content {
+		background-color: #ededed;
+	}
+
+	&-input {
+		width: 70%;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 18px;
+		outline: none;
+		border: none;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 15px;
+		padding-right: 0px;
+	}
 }
 
 
@@ -9,7 +25,8 @@
 	background:none;
 	outline: none;
 	bottom: 50px;
-	right: 50px;
+	right: 10px;
+	z-index:100;
 
 	&:active {
 		border:none;
@@ -18,10 +35,22 @@
 
 }
 
+.btn-call {
+	padding: 10px 40px !important;
+}
+
 .close {
 	&:focus {
 		outline: none;
 		border:none;
 	}
 	
+}
+
+.succes-text {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: #727878;
 }

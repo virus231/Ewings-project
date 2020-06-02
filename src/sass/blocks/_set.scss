@@ -53,5 +53,14 @@
 @media (max-width: $screen-xs-max) {
     .set {
         max-height: 500px;
+        
+        &-block {
+            h3 {
+                font-size: 26px;
+            }
+        }
+    
     }
+
+
 }
