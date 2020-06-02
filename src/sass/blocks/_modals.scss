@@ -1,0 +1,27 @@
+.modal-content {
+	background-color: #ededed;
+}
+
+
+.btn-modal {
+	position: fixed;
+	border: none;
+	background:none;
+	outline: none;
+	bottom: 50px;
+	right: 50px;
+
+	&:active {
+		border:none;
+		outline: none;
+	}
+
+}
+
+.close {
+	&:focus {
+		outline: none;
+		border:none;
+	}
+	
+}

@@ -1,25 +1,25 @@
 
-let btn = document.getElementById('button')
+// let btn = document.getElementById('button')
 
-btn.addEventListener('click', function () {
-  swal("Write something here:",{
-    content: "input",
-    title: "Виникли питання?",
-    text: "Залиште ваш номер для зворотнього дзвінка і ми допоможемо вам!",
-    icon: "warning",
-    buttons: true,
-    dangerMode: true,
-  })
-  .then((willDelete) => {
-    if (willDelete) {
-      swal("Poof! Your imaginary file has been deleted!", {
-        icon: "success",
-      });
-    } else {
-      swal("Your imaginary file is safe!");
-    }
-  });
-})
+// btn.addEventListener('click', function () {
+//   swal("Write something here:",{
+//     content: "input",
+//     title: "Виникли питання?",
+//     text: "Залиште ваш номер для зворотнього дзвінка і ми допоможемо вам!",
+//     icon: "warning",
+//     buttons: true,
+//     dangerMode: true,
+//   })
+//   .then((willDelete) => {
+//     if (willDelete) {
+//       swal("Poof! Your imaginary file has been deleted!", {
+//         icon: "success",
+//       });
+//     } else {
+//       swal("Your imaginary file is safe!");
+//     }
+//   });
+// })
 
 
 $('#toggle2').click(function () {
@@ -190,3 +190,34 @@ $('.overlay').on('click', function () {
   $(".button a").toggleClass('btn-open').toggleClass('btn-close');
   open = false;
 });
+
+
+$(function () {
+
+      // функция с параметрами idModal1 (1 модальное окно) и idModal2 (2 модальное окно)
+      var twoModal = function (idModal1, idModal2) {
+        var showModal2 = false;
+        // при нажатии на ссылку в idModal2 устанавливаем переменной showModal2 значение равное true и закрываем idModal1
+        $('[href="' + idModal2 + '"]').click(function (e) {
+          e.preventDefault();
+          showModal2 = true;
+          $(idModal1).modal('hide');
+        });
+        // после закрытия idModal1, если значение showModal2 равно true, то открываем idModal2
+        $(idModal1).on('hidden.bs.modal', function (e) {
+          if (showModal2) {
+            showModal2 = false;
+            $(idModal2).modal('show');
+          }
+        });
+        // при закрытии idModal2 открываем idModal1
+        $(idModal2).on('hidden.bs.modal', function (e) {
+          $(idModal1).modal('show');
+        });
+      };
+
+      twoModal('#modal-1', '#modal-2');
+      twoModal('#modal-1', '#modal-5');
+      twoModal('#modal-3', '#modal-4');
+
+    });

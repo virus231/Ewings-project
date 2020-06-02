@@ -108,6 +108,7 @@
             </div>
         </div>
     </header>
+    
 
     <section class="promo pt-5">
         <div class="container">
@@ -145,12 +146,61 @@
                 </div>
             </div>
             <div class="row">
-                
+
             </div>
         </div>
-        <button id="button" сlass="popup2 fixed-top">
-            Нажми
-        </button>
+
+            <!-- Модальное окно 1 -->
+          <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="modalLabel1">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <img src="images/logo.svg" alt="">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                    <span aria-hidden="true" class="close">
+                        <img class="close-img" src="images/close-icon.svg" alt="">
+                    </span>
+                  </button>
+                </div>
+
+                <div class="modal-body">
+                    <h4 style="color: #52C600" class="text-center">
+                        Ми зв’яжемося з вами в лічені хвилини
+                    </h4>
+                  <!-- Содержимое модального окна 1 -->
+                    <p>
+                        <input type="text" name="text" placeholder="Введіть ваше ім'я">
+                    </p>
+                    <p>
+                        <input type="tel" name="tel">
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Дзвонити
+                    </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+      
+
+     
+        <p class="modal-box">
+            <a type="button" class="btn-modal" data-toggle="modal" data-target="#modal-1">
+                <img src="images/Кнопка зворотнього дзвінка.svg" alt="">
+            </a>
+        </p>
+      
+        
+        
+      
+
     </section>
 
     <section id='go' class="about mb-5">
@@ -188,7 +238,8 @@
                             Зручний мобільний додаток
                         </p>
                         <span class="about-item__desc pb-5">
-                            Наш додаток для IOS та Android завжди під рукою. Він продуманий і розроблений під потреби наших користувачів. Ми цінуємо ваш час.
+                            Наш додаток для IOS та Android завжди під рукою. Він продуманий і розроблений під потреби
+                            наших користувачів. Ми цінуємо ваш час.
                         </span>
                     </div>
                 </div>
@@ -199,7 +250,8 @@
                             Комфорт і Швидкість
                         </p>
                         <span class="about-item__desc ">
-                            Наші самокати та велосипеди розвивають швидкість до 25 км/год. Обладнані додатковими амортизаторами для комфорту вашої поїздки.
+                            Наші самокати та велосипеди розвивають швидкість до 25 км/год. Обладнані додатковими
+                            амортизаторами для комфорту вашої поїздки.
                         </span>
                     </div>
                 </div>
@@ -254,7 +306,7 @@
         </div>
     </section>
 
-    <section id="how" class="actions">
+    <section id="how" class="actions mt-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-center">
@@ -328,7 +380,7 @@
         <div class="container-fluid">
             <div class="row set-wrap align-items-center">
                 <div class="col-lg-4 col-xl-6 d-flex justify-content-center">
-                    <div class="img-app " >
+                    <div class="img-app ">
                         <img class="img-app-link" src="images/Mobile-App-Krula.svg" alt="App">
                         <img class="img-app-mobile img-fluid" src="images/Mobile app 1.png" alt="App">
                     </div>
@@ -372,13 +424,13 @@
                         <form>
                             <div class="choose-block ml-4 mt-5 d-block ">
                                 <div>
-                                    <input type="checkbox" id="chk" required/>
+                                    <input type="checkbox" id="chk" required />
                                     <label for="chk" class="mb-3 pt-2">
                                         Тижневий абонемент на одиницю e-wings
                                     </label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" id="chk2" required/>
+                                    <input type="checkbox" id="chk2" required />
                                     <label for="chk2" class="pt-2">
                                         Місячний абонемент на одиницю e-wings
                                     </label>
@@ -429,11 +481,12 @@
             <div class="row">
                 <div class="col-12 col-lg-7">
                     <div class="img-order pr-3" style="margin-left: -70px;">
-                        <img src="images/order-img.png" alt=""  class="img-fluid">
+                        <img src="images/order-img.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-12 text-center col-lg-5">
-                    <div class="order-form d-flex justify-content-center flex-column align-items-center" style="margin-top: -7px;">
+                    <div class="order-form d-flex justify-content-center flex-column align-items-center"
+                        style="margin-top: -7px;">
                         <h3 class="order-form__title text-center">
                             <span>
                                 Замовляй доставку
@@ -456,7 +509,7 @@
 
                                 <div class=" ml-3 count-sam d-flex align-items-center justify-content-between">
                                     <span id="count2">0</span>
-                                    <img class="ml-2" src="images/count-sam.svg" alt="">
+                                    <img class="ml-2" src="images/bicycle.svg" alt="">
                                     <button class="plus-1 ml-2 px-2">+</button>
                                     <button class="min-1 ml-1 px-2">-</button>
                                 </div>
@@ -543,9 +596,9 @@
 
                             <!-- Card header -->
                             <div class="card-header border-bottom border-light" role="tab" id="headingOne1">
-                                <a data-toggle="collapse" class="d-flex align-items-center justify-content-start" data-parent="#accordionEx"
-                                    href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1"
-                                    >
+                                <a data-toggle="collapse" class="d-flex align-items-center justify-content-start"
+                                    data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                                    aria-controls="collapseOne1">
                                     <img src="images/question icon.svg" alt="">
 
                                     <h5 class="pl-5  mb-0 d-flex justify-content-between">
@@ -742,14 +795,14 @@
         <div class="container-fluid text-center text-md-left">
 
             <!-- Footer links -->
-            <div class="row text-center text-md-left mt-3 pb-5">
+            <div class="row text-center text-md-left mt-3 pb-5 pb-sm-0">
 
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">
                         <img src="images/footer-logo.svg" alt="Logo">
                     </h6>
-                    <p class="d-flex justify-content-between">
+                    <p class="d-flex justify-content-between justify-content-sm-around">
                         <a href="#">
                             Privacy Policy
                         </a>
@@ -758,7 +811,7 @@
                             Rental Agreement
                         </a>
                     </p>
-                    <p class="d-flex justify-content-between">
+                    <p class="d-flex justify-content-between justify-content-sm-around">
                         <a href="#">
                             Payment Policy
                         </a>
@@ -767,7 +820,7 @@
                             Terms of Service
                         </a>
                     </p>
-                    <div class="promo-store d-flex align-items-center mt-5">
+                    <div class="promo-store d-flex justify-content-between justify-content-sm-around align-items-center mt-5">
                         <a href="#" class="mr-sm-2">
                             <img src="images/app-store.png" alt="App-Store">
                         </a>
@@ -791,17 +844,17 @@
                         <a href="#" class="ml-2 mb-0 pb-0">
                             +38 (068) 340 90 50
                         </a>
-                        
+
                         <p class="ml-5 mt-0">
                             <a href="#">
                                 +38 (073) 340 90 50
                             </a>
                         </p>
-                        
-                        
+
+
                     </p>
                     <p>
-                        
+
                     </p>
                     <p class="ml-3">
                         <img src="images/Post.svg" alt="Post">
@@ -813,10 +866,10 @@
                         <img src="images/pin 1.svg" alt="Pin">
                         <a href="" class="ml-2">
                             Runok Sqr., Lviv 79053 Ukraine
-                        </a> 
+                        </a>
                     </p>
-                    
-                    
+
+
                 </div>
                 <!-- Grid column -->
 
@@ -832,7 +885,7 @@
                     </p>
                     <p>
                         <a href="#!">
-                            Співпраця                            
+                            Співпраця
                         </a>
                     </p>
                     <p>
@@ -870,7 +923,7 @@
                 <!-- Grid column -->
                 <hr class="w-100 clearfix d-md-none">
 
-                
+
 
             </div>
             <!-- Footer links -->
@@ -887,7 +940,7 @@
                     <p class="text-center text-md-left">
                         E-wings © 2020. All Rights Reserved. Created by
                         <a href="#">
-                            <strong> 
+                            <strong>
                                 Siteen
                             </strong>
                         </a>

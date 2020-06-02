@@ -102,3 +102,21 @@
         background-position-y: 20%;
     }
 }
+
+@media (max-width: $screen-sm-max) {
+    .promo-store {
+        // justify-content: space-around;
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    .order {
+        height: 115vh;
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    .count-order {
+        flex-direction: column;
+    }
+}
